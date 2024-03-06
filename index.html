@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="./img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c0bccba2d7.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./scripts.js"></script>
+</head>
+
+<body class="">
+  <!-- navbar -->
+  <header>
+    <nav class="navbar bg-primary row d-flex justify-content-between align-items-center p-4">
+      <div class="col ms-5 ps-5">
+        <div id="carouselExampleSlidesOnly" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-inner d-flex align-items-center">
+            <div class="carousel-item active">
+              <p class="d-block w-100 text-center">"Is this the greatest shoe of our generation?" -Some dad, somewhere, probably</p>
+            </div>
+            <div class="carousel-item">
+              <p class="d-block w-100 text-center">"I simultaneously feel that I can style on any nerd anywhere and mow every lawn in the world, at the same time." -Some hipster, somewhere, probably</p>
+            </div>
+            <div class="carousel-item">
+              <p class="d-block w-100 text-center">"I've always said, it ain't much, but it's enough" -I couldn't think of a funny third one</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col text-center fs-1">
+        THE NEWBALANCE 990
+      </div>
+      <div class="col pe-5 me-5">
+        <div class="">
+          <input type="email" class="btn btn-outline-secondary w-75 bg-primary" placeholder="Join the NB Insiders Mailing List" aria-label="Join the NB Insiders Mailing List" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary" type="button" id="button-addon2" onclick="toggleModal();">Join</button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- main -->
+  <main>
+    <div class="pt-5 h-100 w-100">
+      <div class="row pt-5 h-100 justify-content-around align-items-center">
+        <div class="ms-5 col-6">
+          <!-- bootstrap carousel -->
+          <div id="carouselExampleIndicators" class="carousel carousel-dark slide h-100 d-flex align-items-center rounded">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./img/concrete.jpg" class="d-block w-100 align-self-center" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/inspect.jpg" class="d-block w-100 align-self-center" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./img/stair.jpg" class="d-block w-100 align-self-center" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="col-4 bg-primary">
+          <!-- product details -->
+          <div class="row pt-3">
+            <div class="col">
+              <h1 class="text-left">New Balance 990</h1>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col">
+              <p class="text-left">The New Balance 990 is a classic sneaker that has been around for over 30 years. It's
+                known for its comfort and durability, and it's a favorite among runners and sneakerheads alike. The 990
+                has a timeless design that looks great with any outfit, and it's available in a wide range of colors and
+                materials. Whether you're hitting the pavement or just hanging out, the 990 is the perfect sneaker for
+                any occasion.</p>
+            </div>
+          </div>
+          <div class="row pt-3 pb-3 d-flex justify-content-between align-items-center">
+            <div class="col">
+              <div class="btn btn-primary">Price: $175</div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Style
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.newbalance.com/pd/made-in-usa-990v6/U990V6-46925.html?dwvar_U990V6-46925_style=U990TG6">Made in USA 990v6</a></li>
+                  <li><a class="dropdown-item" href="https://www.newbalance.com/pd/made-in-usa-990v4/U990V4-46924.html?dwvar_U990V4-46924_style=U990TG4">Made in USA 990v4</a></li>
+                  <li><a class="dropdown-item" href="https://www.newbalance.com/pd/fuelcell-990v6/GC990V6-36954.html?dwvar_GC990V6-36954_style=GC990GL6">FuelCell 990v6</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col">
+              <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Colorway
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="">Dad Bod Burgundy</a></li>
+                  <li><a class="dropdown-item" href="">"White Lightning"</a></li>
+                  <li><a class="dropdown-item" href="">Accountant Gray</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="mt-5">
+    <div class="row d-flex justify-content-center">
+      <div class="col-4 text-center">
+        <div class="row d-flex justify-content-end text-white">
+          <div class="col">
+            <a href="https://www.instagram.com/newbalance/?hl=en" target="_blank">
+                <i class="bg-primary fa-brands fa-instagram"></i>
+            </a>
+          </div>
+            <div class="col">
+            <a href="https://www.facebook.com/newbalanceusa/?brand_redir=14299383245" target="_blank">
+              <i class="bg-primary fa-brands fa-tiktok"></i>
+            </a>
+            </div>
+            <div class="col">
+            <a href="https://www.newbalance.com/" target="_blank">
+              <i class="bg-primary fa-brands fa-facebook"></i>
+            </a>
+            </div>
+        </div>
+      </div>
+      <div class="col-4 text-center bg-primary">
+        <p class="text-white">© 2024 From just a "fan" of Dad Shoes.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- modal -->
+  <section id="modal" class="modal--hide">
+    <div class="row h-50 w-50 bg-secondary d-flex justify-content-between">
+      Welcome to the New Balance 990 fan page! Enjoy a 20% discount on your first purchase when you join the NB Insiders Mailing List!
+    </div>
+  </section>
+
+</body>
+</html>
